@@ -1,0 +1,40 @@
+Aula #1
+
+###### CHALLENGES ######
+
+-------------------------------------------------------------------------------------------------
+
+Q) Consulte todos os dados da tabela.
+Digite na resposta a query utilizada.
+
+A)
+
+-------------------------------------------------------------------------------------------------
+
+Q) Consulte apenas os nomes dos passageiros, ordenando-os de forma decrescente.
+Digite na resposta a query utilizada.
+
+A)
+
+-------------------------------------------------------------------------------------------------
+
+Q) Quantas mulheres presentes na tabela?
+Digite junto da resposta (número esperado) a query utilizada.
+
+A)
+
+-------------------------------------------------------------------------------------------------
+
+Q) Quantos passageiros tem idade menor ou igual a 30?
+Digite junto da resposta (número esperado) a query utilizada.
+
+A)
+
+-------------------------------------------------------------------------------------------------
+
+Q) Quantos passageiros homens presentes na 1a classe?
+Digite junto da resposta (número esperado) a query utilizada.
+
+A)
+
+-------------------------------------------------------------------------------------------------

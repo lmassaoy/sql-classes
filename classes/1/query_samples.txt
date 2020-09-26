@@ -1,0 +1,31 @@
+# Exemplo 1
+# Consultando apenas os Ids, Nomes, Gênero e Idade dos passageiros
+SELECT PassengerId, Name, Sex, Age -- Consulta os campos desejados
+from classes_db.titanic; -- Referente a tabela desejada
+
+# Exemplo 2
+# Consultando os mesmos dados anteriores, porém ordenando de forma crescente pelo Nome do passageiro
+SELECT PassengerId, Name, Sex, Age
+FROM classes_db.titanic
+ORDER BY Name ASC; -- Ordenando pelo campo desejado de forma crescente (ASC) ou decrescente (DESC)
+
+# Exemplo 3
+# Consultando todos os dados, mas apenas dos homens
+SELECT *
+FROM classes_db.titanic
+WHERE Sex = "male"; -- Filtrando pelo campo desejado com valor esperado
+
+# Exemplo 4
+# Consultando apenas os nomes e a idade dos passageiros com maior ou igual a 40 anos,
+# ordenando os resultados pela idade em ordem decrescente :D hehe
+SELECT Name,Age
+FROM classes_db.titanic
+WHERE Age >= 40  -- "comparadores" para números podem ser "=" (igual), "<" (menor), ">" (maior), "<=" (menor ou igual) e ">=" (maior ou igual)
+ORDER BY Age DESC; -- Ordenando pelo campo desejado de forma crescente (ASC) ou decrescente (DESC)
+
+# Exemplo 5
+# Consultando apenas os nomes,idade e gênero das passageiras do sexo "feminino" e com idade menor ou igual a 27 anos,
+SELECT Name,Age
+FROM classes_db.titanic
+WHERE Age <= 27  -- "comparadores" para números podem ser "=" (igual), "<" (menor), ">" (maior), "<=" (menor ou igual) e ">=" (maior ou igual)
+AND Sex = "female"; -- É possível utilizar várias condições WHERE em conjunto, aplicando "AND" para casos "E" e "OR" para casos "OU"

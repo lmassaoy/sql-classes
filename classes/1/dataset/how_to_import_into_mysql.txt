@@ -1,0 +1,30 @@
+# Criando o banco de dados (schema no MySQL)
+CREATE SCHEMA `classes_db` ;
+
+# Criando a tabela para importação dos dados
+CREATE TABLE `classes_db`.`titanic` (
+  `PassengerId` INT NOT NULL,
+  `Survived` INT NULL,
+  `Pclass` INT NULL,
+  `Name` VARCHAR(100) NULL,
+  `Sex` VARCHAR(10) NULL,
+  `Age` INT NULL,
+  `SibSp` INT NULL,
+  `Parch` INT NULL,
+  `Ticket` VARCHAR(45) NULL,
+  `Fare` DECIMAL(18,2) NULL,
+  `Cabin` VARCHAR(20) NULL,
+  `Embarked` VARCHAR(10) NULL,
+  PRIMARY KEY (`PassengerId`));
+
+# Consultando a tabela
+SELECT * FROM classes_db.titanic LIMIT 10;
+
+# Importando o arquivo .csv
+# 1) Na "Result Grid" (resultado da query anterior), procure pelo botão de "Importação" (último botão da direita)
+# 2) Procure pelo arquivo
+# 3) Marque a opção "Usar tabela existente" e informe nossa tabela: classes_db.titanic
+# 4) Avance até importar :)
+
+# Consultando a tabela (novamente)
+SELECT * FROM classes_db.titanic LIMIT 10;
